@@ -25,7 +25,9 @@ html{scroll-behavior:smooth}
 .fvis{flex:1 1 420px;min-width:0}
 .ftxt{flex:1 1 380px;min-width:0}
 .stage{position:relative;border-radius:40px;padding:48px 20px;min-height:440px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 30px 60px rgba(31,77,43,.14)}
-.ph{width:280px;max-width:100%;box-sizing:border-box;background:#FFFFFF;border:6px solid #121a15;border-radius:38px;padding:14px;box-shadow:0 24px 48px rgba(27,42,30,.28)}
+.ph{position:relative;width:280px;max-width:100%;box-sizing:border-box;aspect-ratio:9/19;background:#FFFFFF;border:8px solid #121a15;border-radius:46px;padding:38px 14px 30px;box-shadow:0 24px 48px rgba(27,42,30,.28),inset 0 0 0 2px #2a352d}
+.ph::before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);width:76px;height:22px;border-radius:14px;background:#121a15;z-index:5}
+.ph::after{content:"";position:absolute;bottom:9px;left:50%;transform:translateX(-50%);width:92px;height:4px;border-radius:4px;background:#121a15;opacity:.8;z-index:5}
 .eyebrow{margin:0 0 14px;display:inline-block;background:#F6E27A;color:#1B2A1E;font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px}
 .fh{margin:0 0 16px;font-family:'Fredoka',sans-serif;font-weight:600;font-size:clamp(28px,3.6vw,40px);line-height:1.12;color:#1F4D2B}
 .fp{margin:0 0 24px;font-size:18px;color:#2B3B2E}
@@ -77,7 +79,9 @@ html{scroll-behavior:smooth}
       <div style="flex:1 1 320px;min-width:0;display:flex;justify-content:center;position:relative;padding:20px 0">
         <span class="chip" style="top:40px;left:0">Ingredienti scansionati</span>
         <span class="chip" style="bottom:70px;right:0;animation-delay:-2.5s">Lista spesa pronta</span>
-        <div class="float" style="width:300px;max-width:100%;box-sizing:border-box;background:#FFFFFF;border:9px solid #1B2A1E;border-radius:42px;padding:16px 14px 18px;box-shadow:0 24px 50px rgba(31,77,43,.22)">
+        <div class="float" style="position:relative;width:300px;max-width:100%;box-sizing:border-box;aspect-ratio:9/19;background:#FFFFFF;border:8px solid #1B2A1E;border-radius:48px;padding:40px 14px 30px;box-shadow:0 24px 50px rgba(31,77,43,.22),inset 0 0 0 2px #2c3a2f">
+          <span aria-hidden="true" style="position:absolute;top:10px;left:50%;transform:translateX(-50%);width:80px;height:22px;border-radius:14px;background:#1B2A1E"></span>
+          <span aria-hidden="true" style="position:absolute;bottom:9px;left:50%;transform:translateX(-50%);width:96px;height:4px;border-radius:4px;background:#1B2A1E;opacity:.8"></span>
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
             <span style="font-family:'Fredoka',sans-serif;font-weight:600;font-size:22px;line-height:1;color:#2E7D3A;display:inline-flex;align-items:center">Fr<svg width="20" height="20" viewBox="0 0 44 44" aria-hidden="true" style="margin:0 1px"><circle cx="22" cy="22" r="19" fill="#FFFFFF" stroke="#2E7D3A" stroke-width="5"/><circle cx="27" cy="17" r="7.5" fill="#1B2A1E"/></svg>g's</span>
             <span aria-hidden="true" style="width:28px;height:28px;border-radius:50%;background:#F6E27A"></span>
