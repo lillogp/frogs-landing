@@ -33,7 +33,7 @@ th { background: var(--soft); }
 <div class="top"><b>Frog’s</b><nav><a href="./">Torna all'app</a><a href="termini.html">Termini</a><a href="privacy.html">Privacy</a></nav></div>
 
 <h1>Informativa privacy</h1>
-<p class="meta">Ultimo aggiornamento: 26 novembre 2026 · Versione 2026-11-23 (correzioni di forma)</p>
+<p class="meta">Ultimo aggiornamento: 28 novembre 2026 · Versione 2026-11-28 (Abuela, ordini nelle storie, ricerca delle città)</p>
 <p class="box">In breve: usiamo i tuoi dati solo per far funzionare Frog’s. Non vendiamo i tuoi dati, non facciamo pubblicità e non usiamo strumenti di tracciamento. Puoi scaricare i tuoi dati ed eliminare l'account in ogni momento dall'app (Impostazioni → Account).</p>
 
 <h2>1. Chi è il titolare del trattamento</h2>
@@ -49,6 +49,8 @@ th { background: var(--soft); }
 <tr><td>Dati sulla salute (categorie particolari)</td><td>allergie e intolleranze, obiettivo calorico, piani alimentari (comprese le versioni dei piatti adattate per te) e messaggi scambiati con un nutrizionista; se sei collegato a un nutrizionista puoi scegliere di condividere con lui l'elenco delle tue allergie e intolleranze (lo vede solo lui e puoi interromperlo in ogni momento). Sono facoltativi: li inserisci tu.</td></tr>
 <tr><td>Verifica dei nutrizionisti</td><td>solo se ti registri come nutrizionista: albo od ordine, numero di iscrizione, esito della verifica ed eventuale motivo di rifiuto, e il documento d'iscrizione che carichi (PDF o foto). Il documento è in un'area privata, visibile solo all'amministratore.</td></tr>
 <tr><td>Planner e preferenze</td><td>pasti pianificati, dispensa, lista della spesa, persone del planner</td></tr>
+<tr><td>Abuela: botteghe, richieste e valutazioni</td><td>se usi Abuela: la zona o la città che cerchi e (solo sul tuo telefono) il luogo scelto; le richieste di ritiro che invii (bottega, prodotti, quantità, orario, eventuale messaggio, stato della richiesta e controproposte); le valutazioni da 1 a 10 che dai o ricevi e le eventuali segnalazioni tra cliente e bottega. Se apri una bottega: nome, descrizione, indirizzo, zona, coordinate, orari, prodotti e foto. Una richiesta la vedono solo il cliente e la bottega interessata; una bottega è visibile agli utenti che hanno Abuela attiva.</td></tr>
+<tr><td>Ordini condivisi nelle storie</td><td>se condividi una scheda ordine in una storia: nome della bottega, giorno e ora del ritiro e i primi prodotti. La vedono le persone che vedono quella storia, con le regole delle storie (24 ore, poi archivio personale se attivo).</td></tr>
 <tr><td>Voce (facoltativa)</td><td>se usi «Aggiungi con la voce» in Dispensa o Spesa, o il microfono per dettare i passaggi di una ricetta, il microfono si attiva solo quando tocchi «Parla». Il parlato viene trascritto in testo dal servizio di riconoscimento vocale del tuo browser o telefono (ad esempio Google su Chrome e Android, Apple su iPhone), che può ricevere l'audio. Per la dettatura Frog’s non registra né conserva l'audio: salva solo la lista che confermi. I messaggi vocali nelle chat sono diversi: il microfono si attiva solo quando tocchi l'icona del microfono, l'audio viene registrato, caricato sui nostri server e inviato alla persona con cui parli, e resta conservato insieme alla conversazione finché non elimini l'account.</td></tr>
 <tr><td>Fotocamera e foto</td><td>l'app usa la fotocamera o la tua galleria solo quando scatti o scegli una foto per un piatto, quando registri un video (con il suo audio) o scegli una foto o un video per una storia, il profilo o una chat, oppure quando scansioni un codice a barre; non accede ad altre foto del telefono. Per la scansione, il numero del codice a barre viene cercato nell'archivio pubblico Open Food Facts, che può registrare l'indirizzo IP da cui arriva la richiesta; le immagini della fotocamera non vengono inviate.</td></tr>
 <tr><td>Email del servizio</td><td>il tuo indirizzo email serve anche per inviarti le email necessarie al servizio: conferma dell'account, recupero della password, cambio email. Non inviamo email promozionali.</td></tr>
@@ -82,6 +84,9 @@ th { background: var(--soft); }
   <li>Google Play, per la distribuzione e l'aggiornamento dell'app Android;</li>
   <li>Cloudflare, per la gestione del nome di dominio frogsapp.com (traduzione del nome in indirizzo, senza accesso ai contenuti dell'app);</li>
   <li>il fornitore che invia le email del servizio (conferma account e recupero password): Resend, che invia le email dall'indirizzo noreply@frogsapp.com;</li>
+  <li>Open-Meteo, Photon (Komoot) e OpenStreetMap Nominatim, servizi pubblici di ricerca delle località, solo se cerchi una città o una zona in Abuela: il testo che scrivi viene inviato al nostro server e da lì a questi servizi, che ricevono il testo ma non il tuo nome, la tua email o il tuo account; il nostro server non conserva il testo cercato nei registri;</li>
+  <li>Google (Google Places), solo per amministratori e titolari di una bottega che inseriscono un indirizzo: il testo digitato viene inviato a Google per i suggerimenti di indirizzo;</li>
+  <li>Google Calendar, solo se tocchi «Aggiungi a Google Calendar»: apri una pagina di Google con titolo, orario e luogo del ritiro, e Google tratta questi dati secondo la propria informativa. Non possiamo né vogliamo accedere al tuo calendario;</li>
   <li>Open Food Facts, archivio pubblico dei prodotti alimentari, solo se scansioni un codice a barre;</li>
   <li>il servizio di riconoscimento vocale del tuo browser o telefono (Google, Apple), solo se usi la voce;</li>
   <li>Google Fonts, per i caratteri di testo: il tuo browser li scarica da Google, che può registrare il tuo indirizzo IP;</li>
@@ -95,6 +100,7 @@ th { background: var(--soft); }
 <li>I dati dell'account e i contenuti restano finché non elimini l'account. Con l'eliminazione cancelliamo il tuo profilo e i tuoi contenuti dal servizio; le eventuali copie di sicurezza del database, tenute dal nostro fornitore (Supabase), vengono sovrascritte automaticamente e non sono conservate oltre 7 giorni dall'eliminazione. I file (foto, video, audio, documenti) sono cancellati subito, non entrano in queste copie.</li>
 <li>Le storie sono visibili agli altri utenti per 24 ore. Dopo, non le vede più nessuno tranne te: restano salvate nel tuo archivio personale (lista e calendario), visibile solo a te, finché non le elimini. Puoi disattivare l'archivio in Impostazioni → Privacy → «Archivia le mie storie»: in tal caso le storie scadute vengono cancellate definitivamente, insieme ai loro file, entro 72 ore dalla pubblicazione (la pulizia è automatica e avviene ogni ora). Se una storia è oggetto di una segnalazione ancora aperta, viene conservata finché la segnalazione non è esaminata. Eliminando il tuo account, anche l'archivio viene cancellato.</li>
 <li>I messaggi che hai inviato ad altri utenti vengono eliminati insieme all'account.</li>
+<li>Con l'eliminazione dell'account cancelliamo anche la tua bottega, le richieste di ritiro che hai inviato o ricevuto con essa e le valutazioni che hai dato e ricevuto. Le richieste e le valutazioni scompaiono anche per l'altra persona coinvolta, perché sono collegate al tuo account.</li>
 <li>Il documento caricato per la verifica da nutrizionista, se approvato, resta archiviato finché il profilo è attivo, per poter dimostrare il controllo fatto; se rifiutato è cancellato subito. Puoi chiederne la cancellazione scrivendo a info@frogsapp.com, e viene cancellato con l'eliminazione dell'account. Albo, numero d'iscrizione ed esito restano finché resta l'account.</li>
 <li>Le segnalazioni possono essere conservate per il tempo necessario a tutelare gli utenti e il servizio, o a far valere un diritto.</li>
 </ul>
@@ -119,7 +125,7 @@ th { background: var(--soft); }
 
 <h2>10. Modifiche a questa informativa</h2>
 <p>Se cambieremo qualcosa di importante, te lo diremo nell'app prima che la modifica abbia effetto. La data in alto indica l'ultima versione.</p>
-<p class="foot">Versione 23 novembre 2026. Questo documento è stato redatto senza la revisione di un legale e può essere aggiornato: se le modifiche sono importanti ti avviseremo nell'app.</p>
+<p class="foot">Versione 28 novembre 2026. Questo documento è stato redatto senza la revisione di un legale e può essere aggiornato: se le modifiche sono importanti ti avviseremo nell'app.</p>
 </div>
 </body>
 </html>
